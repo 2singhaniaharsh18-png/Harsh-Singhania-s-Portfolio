@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Singhania - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  body {
+    margin: 0;
+    background: #FAF8F3;
+    color: #1B2430;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  a {
+    color: #2F5E8C;
+  }
+
+  header, section, footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 28px;
+    border-left: 1px solid #D8D3C4;
+    border-right: 1px solid #D8D3C4;
+    border-top: 1px solid #D8D3C4;
+  }
+
+  footer {
+    border-bottom: 1px solid #D8D3C4;
+  }
+
+  /* Header */
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #2F5E8C;
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 0 0 20px;
+  }
+
+  header p.lede {
+    font-size: 1.15rem;
+    color: #4A5568;
+    max-width: 500px;
+    margin: 0 0 30px;
+  }
+
+  .hero-links a {
+    text-decoration: none;
+    font-size: 14.5px;
+    padding: 9px 16px;
+    border: 1px solid #1B2430;
+    border-radius: 2px;
+    color: #1B2430;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  .hero-links a.primary {
+    background: #1B2430;
+    color: #FAF8F3;
+  }
+
+  /* Section headings */
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #4A5568;
+    margin: 0 0 22px;
+  }
+
+  h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.7rem;
+    margin: 0 0 18px;
+  }
+
+  /* About */
+  .about-container {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .about-text p {
+    color: #4A5568;
+    margin: 0 0 14px;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: auto;
+    border-radius: 2px;
+    border: 1px solid #D8D3C4;
+    flex-shrink: 0;
+  }
+
+  .now-learning {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 0;
+  }
+
+  .now-learning li {
+    margin-bottom: 8px;
+  }
+
+  .now-learning li::before {
+    content: "— ";
+    color: #D99A2B;
+    font-weight: 600;
+  }
+
+  /* Skills */
+  .skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid #D8D3C4;
+  }
+
+  .skill-row .name {
+    font-weight: 500;
+    width: 160px;
+  }
+
+  .skill-row .items {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13.5px;
+    color: #4A5568;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Contact */
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D8D3C4;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+  }
+
+  .contact-list .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #4A5568;
+  }
+
+  .contact-list a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  footer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: #4A5568;
+  }
+
+  /* Mobile */
+  @media (max-width: 620px) {
+    .about-container {
+      flex-direction: column-reverse;
+    }
+    .profile-img {
+      width: 100%;
+      max-width: 280px;
+    }
+    .skill-row {
+      flex-direction: column;
+      gap: 6px;
+    }
+    .contact-list li {
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <p class="kicker">Building things, one bug at a time</p>
+    <h1>Harsh Singhania</h1>
+    <p class="lede">Information Technology student and developer, exploring web development, machine learning, and core computer science concepts.</p>
+    <div class="hero-links">
+      <a class="primary" href="mailto:2singhaniaharsh18@gmail.com">Email me</a>
+      <a href="https://linkedin.com/in/harsh-singhania-59609934b" target="_blank">LinkedIn</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <p class="section-label">01 — About</p>
+    <h2>Still early, still building</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>I'm an IT student focused on web development, machine learning workflows, and system fundamentals. I believe the best way to master software engineering is through hands-on experimentation—building small projects, reading technical documentation, and iteratively solving complex problems.</p>
+        <p>This site serves as a live documentation of my ongoing technical growth and projects, sharing what I build as it happens.</p>
+        <ul class="now-learning">
+          <li>Deepening knowledge in advanced C++ Object-Oriented Programming</li>
+          <li>Building machine learning classification models using scikit-learn & pandas</li>
+          <li>Developing structured web development applications and mastering Git control</li>
+        </ul>
+      </div>
+      <img src="1000177737.jpg" alt="Harsh Singhania" class="profile-img">
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="section-label">02 — Currently working with</p>
+    <h2>Tools &amp; technologies</h2>
+
+    <div class="skill-row">
+      <div class="name">Languages</div>
+      <div class="items"><span>C++ </span><span>JavaScript</span><span>CSS</span><span>HTML</span></div>
+    </div>
+   
+    <div class="skill-row">
+      <div class="name">Core Concepts</div>
+      <div class="items"><span>Data Structures &amp; Algorithms</span><span>Java</span></div>
+    </div>
+    <div class="skill-row">
+      <div class="name">Coursework</div>
+      <div class="items"><span>Web Programming</span><span>Computer Networks</span><span>Computer Organization</span><span>Data Analytics</span></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-label">03 — Contact</p>
+    <h2>Get in touch</h2>
+    <ul class="contact-list">
+      <li>
+        <span class="label">Email</span>
+        <a href="mailto:2singhaniaharsh18@gmail.com">2singhaniaharsh18@gmail.com</a>
+      </li>
+      <li>
+        <span class="label">LinkedIn</span>
+        <a href="https://linkedin.com/in/harsh-singhania-59609934b" target="_blank">linkedin.com/in/harsh-singhania-59609934b</a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Built by Harsh Singhania · updated 2026
+  </footer>
+
+</body>
+</html>
